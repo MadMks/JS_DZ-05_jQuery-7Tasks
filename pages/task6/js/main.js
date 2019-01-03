@@ -7,8 +7,7 @@ $('button').click(function() {
 
 
 $('li').dblclick(function(event) {
-	var elem = event.target;
-	elem.classList.add('active');
+	$(this).addClass('active');
 }); // Двойной клик мышью
 
 
