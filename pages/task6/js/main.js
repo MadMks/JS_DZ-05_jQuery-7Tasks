@@ -1,33 +1,28 @@
 /* ====== События, связанные с мышью ===== */
 
-// $('button').click(function() {
-// 	console.log('Ты кликнул на кнопку');
-// }); // Клик мышью
 
-// $('button').dblclick(function() {
-// 	console.log('Ты кликнул на кнопку дважды');
-// }); // Двойной клик мышью
+$('button').click(function() {
+	alert('Приветствую, пользователь!');
+}); // Клик мышью
 
-// $('ul li').mouseenter(function(event) {
-// 	$(this).css('color', 'red');
-// }); // Наведение мыши на элемент
 
-$('ul li').mousedown(function(event) {
-	$(this).css('color', 'red');
-}); // Момент нажатия кнопки мыши
+$('li').dblclick(function(event) {
+	var elem = event.target;
+	elem.classList.add('active');
+}); // Двойной клик мышью
 
-$('ul li').mouseup(function(event) {
-	$(this).css('color', '#333');
-}); // Момент "отжатия" кнопки мыши :)
 
-$('ul li').mouseover(function(event) {
-	$(this).css('color', 'blue');
-});  // Мышь наезжает на площадь элемента
+$('ul li .menu').mouseover(function(event) {
+	$('.subMenu').css('display', 'inline');
+}); // Наведение мыши на элемент
+$('.subMenu').mouseover(function(event) {
+	$('.subMenu').css('display', 'inline');
+}); // Наведение мыши на элемент
 
-$('ul li').mouseout(function(event) {
-	$(this).css('color', 'black');
+
+$('ul li .menu').mouseout(function(event) {
+	$('.subMenu').css('display', 'none');
 }); // Мышь покидает площадь элемента
-
-$('ul li').mousemove(function(event) {
-	$(this).toggleClass('blue');
-}); // Движение мыши над элементом
+$('.subMenu').mouseout(function(event) {
+	$('.subMenu').css('display', 'none');
+}); // Мышь покидает площадь элемента

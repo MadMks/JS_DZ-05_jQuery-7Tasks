@@ -7,3 +7,18 @@ ul li {
 .blue {
 	color: blue;
 }
+
+.active{
+	border: 1px solid #cccccc;
+	background-color: #cccccc;
+}
+.menu{
+	padding-right: 10px;
+}
+.subMenu{
+	display: none;
+	background-color: darkgray;
+	position: absolute;
+	padding: 15px 30px;
+	/* margin-left: 10px; */
+}
