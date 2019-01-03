@@ -1,1 +1,158 @@
-"" 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Введение в jQuery</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+
+            <!-- Task 1 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 1</h5>
+                    <p class="card-text">
+                        Написать на jQuery обращение к элементам по:
+                        <ul>
+                            <li>Перечислению (первый, второй, третий...)</li> 
+                            <li>Найти все span внутри блока .container (элемент span - потомок)</li>
+                            <li>Найти только те span, которые находятся НЕПОСРЕДСТВЕННО внутри .container (span - дочерний элемент)</li>
+                            <li>Найти все сестринские элементы для тега H2 </li>
+                            <li>Найти только ближайший сестринский элемент для тега H2</li>
+                        </ul>
+                    </p>
+
+                    <a href="pages/task1/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 2</h5>
+                    <p class="card-text">
+                        Написать на jQuery обращение к элементам 
+                        по:
+                        <ul>
+                            <li>Атрибуту href </li>
+                            <li>Атрибуту href, который полностью соответствует "http://google.com"</li>
+                            <li>Атрибуту src, который начинается на "img/"</li>
+                            <li>Атрибуту src, который заканчивается на ".js" </li>
+                            <li>Атрибутам src и title  </li>
+                        </ul>
+                    </p>
+
+                    <a href="pages/task2/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 3</h5>
+                    <p class="card-text">
+                        Отфильтровать на jQuery элементы.
+                        <ul>
+                            <li>Найти первый элемент li из списка ul</li>
+                            <li>Найти последний элемент из списка ul </li>
+                            <li>Найти все четные li из списка ul </li>
+                            <li>Найти элемент из списка, чей порядковый 
+                            номер больше 3 и задать ему красный фон</li>
+                        </ul>
+                    </p>
+
+                    <a href="pages/task3/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 4 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 4</h5>
+                    <p class="card-text">
+                        Отфильтровать на jQuery элементы
+                        по содержимому.
+                        <ul>
+                            <li>Найти элемент на странице, который 
+                                содержит слово "Пользователь" </li>
+                            <li>Найти пустой элемент и написать 
+                                в него текст "Пусто"</li>
+                        </ul>
+                    </p>
+
+                    <a href="pages/task4/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 5 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 5</h5>
+                    <p class="card-text">
+                        Отфильтровать элементы формы на jQuery.
+                        <ul>
+                            <li>Найти все элементы формы с классом from-control</li>
+                            <li>Найти кнопки на странице и выделить их 
+                                красной рамкой и желтым фоном</li>
+                            <li>Найти все radio-элементы из одной группы 
+                                (где gender это значение атрибута name у 
+                                искомой группы переключателей)</li>
+                        </ul>
+                    </p>
+
+                    <a href="pages/task5/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 6 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 6</h5>
+                    <p class="card-text">
+                        При клике на кнопку, вывести сообщение
+                         "Приветствую, пользователь!" 
+                         <ul>
+                            <li>При двойном клике на элемент, присвоить ему класс active</li>
+                            <li>Сделать выпадающее меню, при наведении на элемент</li>
+                         </ul>
+                    </p>
+
+                    <a href="pages/task6/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+            <!-- Task 7 -->
+            <div class="col-12 card">
+                <div class="card-body">
+                    <h5 class="card-title">Задание 7</h5>
+                    <p class="card-text">
+                        Есть поле input, в которое пользователь вводит 
+                        свое имя. При вводе имени нужно выводить 
+                        в консоль количество букв, которое ввел пользователь.
+                        Подсказка: воспользуйся функцией length
+                    </p>
+
+                    <a href="pages/task7/index.html" target="_blank"
+                        class="btn btn-success">Открыть страницу</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
